@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "RUfJK4rBlfLAx5wFSVpFKdoueA/Z8Yiw6ncPeJR7RLk=",
+  "Source": "application-service",
+  "BasePath": "_content/application-service",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

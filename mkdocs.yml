@@ -1,0 +1,18 @@
+site_name: BoltOn
+nav:
+    - Introduction: index.md
+    - Requestor: requestor.md
+    - Data: data.md
+    - Bus: bus.md
+    - Cache: cache.md
+    - Hangfire: hangfire.md
+    # - CQRS: cqrs.md
+    - State Machine: statemachine.md
+    - Web: web.md
+    - Utilities: utilities.md
+    # - Logging: logging.md
+    - Samples: samples.md
+    # - CLI: cli.md
+    - CI & CD: build.md
+theme: readthedocs
+
