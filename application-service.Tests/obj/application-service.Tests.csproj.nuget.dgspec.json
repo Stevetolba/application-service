@@ -41,29 +41,25 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
-            "AutoMapper": {
-              "target": "Package",
-              "version": "[12.0.1, )"
-            },
             "BoltOn": {
               "target": "Package",
               "version": "[1.10.2, )"
-            },
-            "BoltOn.Bus.MassTransit": {
-              "target": "Package",
-              "version": "[1.5.1, )"
-            },
-            "BoltOn.Data.EF": {
-              "target": "Package",
-              "version": "[1.5.1, )"
             },
             "BoltOn.Data.MartenDb": {
               "target": "Package",
               "version": "[0.5.1, )"
             },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.5.1, )"
+            },
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.2, )"
+            },
+            "OneOf": {
+              "target": "Package",
+              "version": "[3.0.223, )"
             }
           },
           "imports": [

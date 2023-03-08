@@ -274,3 +274,882 @@ $function$;
  
 [2023-02-24 17:17:06.830] [SWTs-MBP] [DBG] [Marten.IDocumentStore]> Marten executed in 3 ms, SQL: select d.id, d.data from public.mt_doc_student as d
  
+[2023-02-27 10:13:45.005] [SWTs-MBP] [INF] [FastEndpoints.StartupTimer]> Registered 2 endpoints in 339 milliseconds. 
+[2023-02-27 10:13:45.232] [SWTs-MBP] [INF] [FastEndpoints.Swagger.ValidationSchemaProcessor]> No validators found in the system! 
+[2023-02-27 10:14:02.055] [SWTs-MBP] [DBG] [BoltOn.Requestor.Requestor]> Resolving handler for request: Application.Service.Application.Handlers.GetAllStudentsRequest 
+[2023-02-27 10:14:02.834] [SWTs-MBP] [DBG] [BoltOn.Requestor.Requestor]> Resolved handler: Application.Service.Application.Handlers.GetAllStudentsHandler 
+[2023-02-27 10:14:03.223] [SWTs-MBP] [DBG] [Marten.IDocumentStore]> Marten executed in 7 ms, SQL: select d.data from public.mt_doc_studenttype as d
+ 
+[2023-02-27 10:14:03.298] [SWTs-MBP] [DBG] [Marten.IDocumentStore]> Marten executed in 3 ms, SQL: select d.id, d.data from public.mt_doc_student as d
+ 
+[2023-03-07 15:34:38.715] [SWTs-MacBook-Pro] [INF] [FastEndpoints.StartupTimer]> Registered 4 endpoints in 218 milliseconds. 
+[2023-03-07 15:34:38.891] [SWTs-MacBook-Pro] [INF] [FastEndpoints.Swagger.ValidationSchemaProcessor]> No validators found in the system! 
+[2023-03-07 15:34:41.591] [SWTs-MacBook-Pro] [ERR] [Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware]> An unhandled exception has occurred while executing the request. 
+System.InvalidOperationException: The constraint reference 'string' could not be resolved to a type. Register the constraint type with 'Microsoft.AspNetCore.Routing.RouteOptions.ConstraintMap'.
+   at Microsoft.AspNetCore.Routing.DefaultParameterPolicyFactory.Create(RoutePatternParameterPart parameter, String inlineText)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.CreateCandidate(Endpoint endpoint, Int32 score)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.CreateCandidates(IReadOnlyList`1 endpoints)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.Build()
+   at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher.CreateMatcher(IReadOnlyList`1 endpoints)
+   at Microsoft.AspNetCore.Routing.DataSourceDependentCache`1.Initialize()
+   at System.Threading.LazyInitializer.EnsureInitializedCore[T](T& target, Boolean& initialized, Object& syncLock, Func`1 valueFactory)
+   at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher..ctor(EndpointDataSource dataSource, Lifetime lifetime, Func`1 matcherBuilderFactory)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherFactory.CreateMatcher(EndpointDataSource dataSource)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.InitializeCoreAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.<Invoke>g__AwaitMatcher|8_0(EndpointRoutingMiddleware middleware, HttpContext httpContext, Task`1 matcherTask)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[2023-03-07 15:34:41.836] [SWTs-MacBook-Pro] [ERR] [Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware]> An unhandled exception has occurred while executing the request. 
+System.InvalidOperationException: The constraint reference 'string' could not be resolved to a type. Register the constraint type with 'Microsoft.AspNetCore.Routing.RouteOptions.ConstraintMap'.
+   at Microsoft.AspNetCore.Routing.DefaultParameterPolicyFactory.Create(RoutePatternParameterPart parameter, String inlineText)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.CreateCandidate(Endpoint endpoint, Int32 score)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.CreateCandidates(IReadOnlyList`1 endpoints)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.Build()
+   at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher.CreateMatcher(IReadOnlyList`1 endpoints)
+   at Microsoft.AspNetCore.Routing.DataSourceDependentCache`1.Initialize()
+   at System.Threading.LazyInitializer.EnsureInitializedCore[T](T& target, Boolean& initialized, Object& syncLock, Func`1 valueFactory)
+   at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher..ctor(EndpointDataSource dataSource, Lifetime lifetime, Func`1 matcherBuilderFactory)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherFactory.CreateMatcher(EndpointDataSource dataSource)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.InitializeCoreAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.<Invoke>g__AwaitMatcher|8_0(EndpointRoutingMiddleware middleware, HttpContext httpContext, Task`1 matcherTask)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[2023-03-07 15:35:33.905] [SWTs-MacBook-Pro] [INF] [FastEndpoints.StartupTimer]> Registered 4 endpoints in 229 milliseconds. 
+[2023-03-07 15:35:34.113] [SWTs-MacBook-Pro] [INF] [FastEndpoints.Swagger.ValidationSchemaProcessor]> No validators found in the system! 
+[2023-03-07 15:38:48.632] [SWTs-MacBook-Pro] [INF] [FastEndpoints.StartupTimer]> Registered 4 endpoints in 270 milliseconds. 
+[2023-03-07 15:38:48.968] [SWTs-MacBook-Pro] [INF] [FastEndpoints.Swagger.ValidationSchemaProcessor]> No validators found in the system! 
+[2023-03-07 16:34:13.107] [SWTs-MacBook-Pro] [INF] [FastEndpoints.StartupTimer]> Registered 4 endpoints in 209 milliseconds. 
+[2023-03-07 16:34:13.346] [SWTs-MacBook-Pro] [INF] [FastEndpoints.Swagger.ValidationSchemaProcessor]> No validators found in the system! 
+[2023-03-07 17:01:44.574] [SWTs-MacBook-Pro] [DBG] [BoltOn.Requestor.Requestor]> Resolving handler for request: Application.Service.Application.Handlers.CreateApplicationRequest 
+[2023-03-07 17:01:45.908] [SWTs-MacBook-Pro] [DBG] [BoltOn.Requestor.Requestor]> Resolved handler: Application.Service.Application.Handlers.CreateApplicationHandler 
+[2023-03-07 17:01:48.117] [SWTs-MacBook-Pro] [DBG] [Application.Service.Application.Handlers.CreateApplicationHandler]> Validate Application... 
+[2023-03-07 17:02:39.111] [SWTs-MacBook-Pro] [ERR] [Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware]> An unhandled exception has occurred while executing the request. 
+System.InvalidOperationException: Cannot return as T0 as result is T1
+   at OneOf.OneOf`2.get_AsT0()
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCoreAsObject(Utf8JsonWriter writer, Object value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonSerializer.WriteCore[TValue](Utf8JsonWriter writer, TValue& value, JsonTypeInfo jsonTypeInfo, WriteStack& state)
+   at System.Text.Json.JsonSerializer.WriteStreamAsync[TValue](Stream utf8Json, TValue value, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at System.Text.Json.JsonSerializer.WriteStreamAsync[TValue](Stream utf8Json, TValue value, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at System.Text.Json.JsonSerializer.WriteStreamAsync[TValue](Stream utf8Json, TValue value, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Application.Service.Endpoints.PostApplicationsEndpoint.HandleAsync(PostApplicationRequest request, CancellationToken cancellationToken) in /Users/tolbas/Projects/application-service/application-service/Endpoints/PostApplicationEndpoint.cs:line 32
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[2023-03-07 17:03:52.553] [SWTs-MacBook-Pro] [DBG] [BoltOn.Requestor.Requestor]> Resolving handler for request: Application.Service.Application.Handlers.CreateApplicationRequest 
+[2023-03-07 17:03:52.565] [SWTs-MacBook-Pro] [DBG] [BoltOn.Requestor.Requestor]> Resolved handler: Application.Service.Application.Handlers.CreateApplicationHandler 
+[2023-03-07 17:04:02.000] [SWTs-MacBook-Pro] [DBG] [Application.Service.Application.Handlers.CreateApplicationHandler]> Validate Application... 
+[2023-03-07 17:04:02.003] [SWTs-MacBook-Pro] [DBG] [Application.Service.Application.Handlers.CreateApplicationHandler]> Creating Application... 
+[2023-03-07 17:04:05.663] [SWTs-MacBook-Pro] [INF] [Marten.IDocumentStore]> Executed schema update SQL:
+CREATE OR REPLACE FUNCTION public.mt_immutable_timestamp(value text) RETURNS timestamp without time zone LANGUAGE sql IMMUTABLE AS
+$function$
+select value::timestamp
+
+$function$;
+
+
+CREATE OR REPLACE FUNCTION public.mt_immutable_timestamptz(value text) RETURNS timestamp with time zone LANGUAGE sql IMMUTABLE AS
+$function$
+select value::timestamptz
+
+$function$;
+
+
+CREATE OR REPLACE FUNCTION public.mt_grams_vector(text)
+        RETURNS tsvector		
+        LANGUAGE plpgsql
+        IMMUTABLE STRICT
+AS $function$
+BEGIN
+        RETURN (SELECT array_to_string(mt_grams_array($1), ' ')::tsvector);
+END
+$function$;
+
+
+CREATE OR REPLACE FUNCTION public.mt_grams_query(text)
+        RETURNS tsquery		
+        LANGUAGE plpgsql
+        IMMUTABLE STRICT
+AS $function$
+BEGIN
+        RETURN (SELECT array_to_string(mt_grams_array($1), ' & ')::tsquery);
+END
+$function$;
+
+
+CREATE OR REPLACE FUNCTION public.mt_grams_array(words text)
+        RETURNS text[]		
+        LANGUAGE plpgsql
+        IMMUTABLE STRICT
+AS $function$
+        DECLARE result text[];
+        DECLARE word text;
+        DECLARE clean_word text;
+        BEGIN
+                FOREACH word IN ARRAY string_to_array(words, ' ')
+                LOOP
+                     clean_word = regexp_replace(word, '[^a-zA-Z0-9]+', '','g');
+                     FOR i IN 1 .. length(clean_word)
+                     LOOP
+                         result := result || quote_literal(substr(lower(clean_word), i, 1));
+                         result := result || quote_literal(substr(lower(clean_word), i, 2));
+                         result := result || quote_literal(substr(lower(clean_word), i, 3));
+                     END LOOP;
+                END LOOP;
+
+                RETURN ARRAY(SELECT DISTINCT e FROM unnest(result) AS a(e) ORDER BY e);
+        END;
+$function$;
+
+
+ 
+[2023-03-07 17:04:06.085] [SWTs-MacBook-Pro] [INF] [Marten.IDocumentStore]> Executed schema update SQL:
+DO $$
+BEGIN
+    IF NOT EXISTS(
+        SELECT schema_name
+          FROM information_schema.schemata
+          WHERE schema_name = 'student'
+      )
+    THEN
+      EXECUTE 'CREATE SCHEMA student';
+    END IF;
+
+END
+$$;
+
+
+DROP TABLE IF EXISTS student.mt_doc_application CASCADE;
+CREATE TABLE student.mt_doc_application (
+    id                  varchar                     NOT NULL,
+    data                jsonb                       NOT NULL,
+    mt_last_modified    timestamp with time zone    NULL DEFAULT (transaction_timestamp()),
+    mt_version          uuid                        NOT NULL DEFAULT (md5(random()::text || clock_timestamp()::text)::uuid),
+    mt_dotnet_type      varchar                     NULL,
+CONSTRAINT pkey_mt_doc_application_id PRIMARY KEY (id)
+);
+
+CREATE OR REPLACE FUNCTION student.mt_upsert_application(doc JSONB, docDotNetType varchar, docId varchar, docVersion uuid) RETURNS UUID LANGUAGE plpgsql SECURITY INVOKER AS $function$
+DECLARE
+  final_version uuid;
+BEGIN
+INSERT INTO student.mt_doc_application ("data", "mt_dotnet_type", "id", "mt_version", mt_last_modified) VALUES (doc, docDotNetType, docId, docVersion, transaction_timestamp())
+  ON CONFLICT ON CONSTRAINT pkey_mt_doc_application_id
+  DO UPDATE SET "data" = doc, "mt_dotnet_type" = docDotNetType, "mt_version" = docVersion, mt_last_modified = transaction_timestamp();
+
+  SELECT mt_version FROM student.mt_doc_application into final_version WHERE id = docId ;
+  RETURN final_version;
+END;
+$function$;
+
+
+CREATE OR REPLACE FUNCTION student.mt_insert_application(doc JSONB, docDotNetType varchar, docId varchar, docVersion uuid) RETURNS UUID LANGUAGE plpgsql SECURITY INVOKER AS $function$
+BEGIN
+INSERT INTO student.mt_doc_application ("data", "mt_dotnet_type", "id", "mt_version", mt_last_modified) VALUES (doc, docDotNetType, docId, docVersion, transaction_timestamp());
+
+  RETURN docVersion;
+END;
+$function$;
+
+
+CREATE OR REPLACE FUNCTION student.mt_update_application(doc JSONB, docDotNetType varchar, docId varchar, docVersion uuid) RETURNS UUID LANGUAGE plpgsql SECURITY INVOKER AS $function$
+DECLARE
+  final_version uuid;
+BEGIN
+  UPDATE student.mt_doc_application SET "data" = doc, "mt_dotnet_type" = docDotNetType, "mt_version" = docVersion, mt_last_modified = transaction_timestamp() where id = docId;
+
+  SELECT mt_version FROM student.mt_doc_application into final_version WHERE id = docId ;
+  RETURN final_version;
+END;
+$function$;
+
+ 
+[2023-03-07 17:04:06.259] [SWTs-MacBook-Pro] [DBG] [Marten.IDocumentStore]> Marten executed in 34 ms, SQL: select student.mt_insert_application(:p0, :p1, :p2, :p3);
+  p0: {"ApplicationId":"5b39591e-4d80-4403-a204-1d3ea5bed47e","Status":null,"Parties":[{"FirstName":"commodo qui","LastName":"consequat esse est labore","StreetAddressLine1":"tempor","StreetAddressLine2":"incididunt velit","City":"cillum veniam fugiat enim","StateCode":"reprehenderit","ZipCode":"consectetur magna et mollit","EmailAddress":"aute","MobilePhoneNumber":"magna et sed id cupidatat","DateOfBirth":"magna elit","HouseholdIncome":27128692,"IsControlPerson":true,"TaxId":{"Number":"ea exercitation reprehenderit Duis","IsSocialSecurityNumber":false}},{"FirstName":"dolor proident","LastName":"nisi reprehen","StreetAddressLine1":"dolore","StreetAddressLine2":"tempor ut ut Duis","City":"cupidatat ipsum fugiat","StateCode":"Excepteur ut minim commodo","ZipCode":"reprehenderit dolor eu","EmailAddress":"cillum ad","MobilePhoneNumber":"incididunt labore","DateOfBirth":"","HouseholdIncome":5967324,"IsControlPerson":false,"TaxId":{"Number":"magna ipsum","IsSocialSecurityNumber":false}}],"Business":{"Name":"dolor proident dolor non","DoingBusinessAs":"irure","StreetAddressLine1":"occaecat dolor","StreetAddressLine2":"qui mollit incididunt","City":"magna dolor fugiat laboris minim","StateCode":"elit irure est","ZipCode":"reprehenderit","PhoneNumber":"culpa ullam","EntityType":5,"AnnualSales":38615352,"OutstandingDebtAmount":38411491,"NaicsCode":72823479,"StartDate":"ut Excepteur","IsNonProfit":true,"BusinessTaxId":{"Number":"enim","IsEmployerIdentificationNumber":true}},"LoanRequest":{"Amount":63214923,"Term":95654577,"Purpose":8,"ProductType":1,"Pitch":"sit eu"}}
+  p1: Application.Service.Application.Entities.Application
+  p2: 5b39591e-4d80-4403-a204-1d3ea5bed47e
+  p3: 0186be1a-61bf-4d73-a731-5d8b18d45acb 
+[2023-03-07 17:04:06.286] [SWTs-MacBook-Pro] [DBG] [Marten.IDocumentStore]> Persisted 0 updates in 34 ms, 1 inserts, and 0 deletions 
+[2023-03-07 17:04:06.419] [SWTs-MacBook-Pro] [ERR] [Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware]> An unhandled exception has occurred while executing the request. 
+System.InvalidOperationException: Cannot return as T1 as result is T0
+   at OneOf.OneOf`2.get_AsT1()
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCoreAsObject(Utf8JsonWriter writer, Object value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonSerializer.WriteCore[TValue](Utf8JsonWriter writer, TValue& value, JsonTypeInfo jsonTypeInfo, WriteStack& state)
+   at System.Text.Json.JsonSerializer.WriteStreamAsync[TValue](Stream utf8Json, TValue value, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at System.Text.Json.JsonSerializer.WriteStreamAsync[TValue](Stream utf8Json, TValue value, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at System.Text.Json.JsonSerializer.WriteStreamAsync[TValue](Stream utf8Json, TValue value, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Application.Service.Endpoints.PostApplicationsEndpoint.HandleAsync(PostApplicationRequest request, CancellationToken cancellationToken) in /Users/tolbas/Projects/application-service/application-service/Endpoints/PostApplicationEndpoint.cs:line 32
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[2023-03-07 17:04:19.808] [SWTs-MacBook-Pro] [DBG] [BoltOn.Requestor.Requestor]> Resolving handler for request: Application.Service.Application.Handlers.CreateApplicationRequest 
+[2023-03-07 17:04:19.829] [SWTs-MacBook-Pro] [DBG] [BoltOn.Requestor.Requestor]> Resolved handler: Application.Service.Application.Handlers.CreateApplicationHandler 
+[2023-03-07 17:04:22.928] [SWTs-MacBook-Pro] [DBG] [Application.Service.Application.Handlers.CreateApplicationHandler]> Validate Application... 
+[2023-03-07 17:04:26.839] [SWTs-MacBook-Pro] [DBG] [Application.Service.Application.Handlers.CreateApplicationHandler]> Creating Application... 
+[2023-03-07 17:04:40.426] [SWTs-MacBook-Pro] [DBG] [Marten.IDocumentStore]> Marten executed in 65 ms, SQL: select student.mt_insert_application(:p0, :p1, :p2, :p3);
+  p0: {"ApplicationId":"fa1f3764-60f9-49d8-9ae8-6f1610c22c7f","Status":null,"Parties":[{"FirstName":"commodo qui","LastName":"consequat esse est labore","StreetAddressLine1":"tempor","StreetAddressLine2":"incididunt velit","City":"cillum veniam fugiat enim","StateCode":"reprehenderit","ZipCode":"consectetur magna et mollit","EmailAddress":"aute","MobilePhoneNumber":"magna et sed id cupidatat","DateOfBirth":"magna elit","HouseholdIncome":27128692,"IsControlPerson":true,"TaxId":{"Number":"ea exercitation reprehenderit Duis","IsSocialSecurityNumber":false}},{"FirstName":"dolor proident","LastName":"nisi reprehen","StreetAddressLine1":"dolore","StreetAddressLine2":"tempor ut ut Duis","City":"cupidatat ipsum fugiat","StateCode":"Excepteur ut minim commodo","ZipCode":"reprehenderit dolor eu","EmailAddress":"cillum ad","MobilePhoneNumber":"incididunt labore","DateOfBirth":"","HouseholdIncome":5967324,"IsControlPerson":false,"TaxId":{"Number":"magna ipsum","IsSocialSecurityNumber":false}}],"Business":{"Name":"dolor proident dolor non","DoingBusinessAs":"irure","StreetAddressLine1":"occaecat dolor","StreetAddressLine2":"qui mollit incididunt","City":"magna dolor fugiat laboris minim","StateCode":"elit irure est","ZipCode":"reprehenderit","PhoneNumber":"culpa ullam","EntityType":5,"AnnualSales":38615352,"OutstandingDebtAmount":38411491,"NaicsCode":72823479,"StartDate":"ut Excepteur","IsNonProfit":true,"BusinessTaxId":{"Number":"enim","IsEmployerIdentificationNumber":true}},"LoanRequest":{"Amount":63214923,"Term":95654577,"Purpose":8,"ProductType":1,"Pitch":"sit eu"}}
+  p1: Application.Service.Application.Entities.Application
+  p2: fa1f3764-60f9-49d8-9ae8-6f1610c22c7f
+  p3: 0186be1a-ea04-4ca3-931c-f00600a610ac 
+[2023-03-07 17:04:40.577] [SWTs-MacBook-Pro] [DBG] [Marten.IDocumentStore]> Persisted 0 updates in 65 ms, 1 inserts, and 0 deletions 
+[2023-03-07 17:04:55.372] [SWTs-MacBook-Pro] [ERR] [Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware]> An unhandled exception has occurred while executing the request. 
+System.InvalidOperationException: Cannot return as T1 as result is T0
+   at OneOf.OneOf`2.get_AsT1()
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCoreAsObject(Utf8JsonWriter writer, Object value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonSerializer.WriteCore[TValue](Utf8JsonWriter writer, TValue& value, JsonTypeInfo jsonTypeInfo, WriteStack& state)
+   at System.Text.Json.JsonSerializer.WriteStreamAsync[TValue](Stream utf8Json, TValue value, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at System.Text.Json.JsonSerializer.WriteStreamAsync[TValue](Stream utf8Json, TValue value, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at System.Text.Json.JsonSerializer.WriteStreamAsync[TValue](Stream utf8Json, TValue value, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Application.Service.Endpoints.PostApplicationsEndpoint.HandleAsync(PostApplicationRequest request, CancellationToken cancellationToken) in /Users/tolbas/Projects/application-service/application-service/Endpoints/PostApplicationEndpoint.cs:line 32
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[2023-03-07 17:10:42.685] [SWTs-MacBook-Pro] [INF] [FastEndpoints.StartupTimer]> Registered 4 endpoints in 470 milliseconds. 
+[2023-03-07 17:10:43.115] [SWTs-MacBook-Pro] [INF] [FastEndpoints.Swagger.ValidationSchemaProcessor]> No validators found in the system! 
+[2023-03-07 17:12:38.158] [SWTs-MacBook-Pro] [DBG] [BoltOn.Requestor.Requestor]> Resolving handler for request: Application.Service.Application.Handlers.CreateApplicationRequest 
+[2023-03-07 17:12:39.034] [SWTs-MacBook-Pro] [DBG] [BoltOn.Requestor.Requestor]> Resolved handler: Application.Service.Application.Handlers.CreateApplicationHandler 
+[2023-03-07 17:12:44.243] [SWTs-MacBook-Pro] [DBG] [Application.Service.Application.Handlers.CreateApplicationHandler]> Validate Application... 
+[2023-03-07 17:12:44.266] [SWTs-MacBook-Pro] [DBG] [Application.Service.Application.Handlers.CreateApplicationHandler]> Creating Application... 
+[2023-03-07 17:12:47.489] [SWTs-MacBook-Pro] [INF] [Marten.IDocumentStore]> Executed schema update SQL:
+DO $$
+BEGIN
+    IF NOT EXISTS(
+        SELECT schema_name
+          FROM information_schema.schemata
+          WHERE schema_name = 'applicationservice'
+      )
+    THEN
+      EXECUTE 'CREATE SCHEMA applicationservice';
+    END IF;
+
+END
+$$;
+
+
+DROP TABLE IF EXISTS applicationservice.mt_doc_application CASCADE;
+CREATE TABLE applicationservice.mt_doc_application (
+    id                  varchar                     NOT NULL,
+    data                jsonb                       NOT NULL,
+    mt_last_modified    timestamp with time zone    NULL DEFAULT (transaction_timestamp()),
+    mt_version          uuid                        NOT NULL DEFAULT (md5(random()::text || clock_timestamp()::text)::uuid),
+    mt_dotnet_type      varchar                     NULL,
+CONSTRAINT pkey_mt_doc_application_id PRIMARY KEY (id)
+);
+
+CREATE OR REPLACE FUNCTION applicationservice.mt_upsert_application(doc JSONB, docDotNetType varchar, docId varchar, docVersion uuid) RETURNS UUID LANGUAGE plpgsql SECURITY INVOKER AS $function$
+DECLARE
+  final_version uuid;
+BEGIN
+INSERT INTO applicationservice.mt_doc_application ("data", "mt_dotnet_type", "id", "mt_version", mt_last_modified) VALUES (doc, docDotNetType, docId, docVersion, transaction_timestamp())
+  ON CONFLICT ON CONSTRAINT pkey_mt_doc_application_id
+  DO UPDATE SET "data" = doc, "mt_dotnet_type" = docDotNetType, "mt_version" = docVersion, mt_last_modified = transaction_timestamp();
+
+  SELECT mt_version FROM applicationservice.mt_doc_application into final_version WHERE id = docId ;
+  RETURN final_version;
+END;
+$function$;
+
+
+CREATE OR REPLACE FUNCTION applicationservice.mt_insert_application(doc JSONB, docDotNetType varchar, docId varchar, docVersion uuid) RETURNS UUID LANGUAGE plpgsql SECURITY INVOKER AS $function$
+BEGIN
+INSERT INTO applicationservice.mt_doc_application ("data", "mt_dotnet_type", "id", "mt_version", mt_last_modified) VALUES (doc, docDotNetType, docId, docVersion, transaction_timestamp());
+
+  RETURN docVersion;
+END;
+$function$;
+
+
+CREATE OR REPLACE FUNCTION applicationservice.mt_update_application(doc JSONB, docDotNetType varchar, docId varchar, docVersion uuid) RETURNS UUID LANGUAGE plpgsql SECURITY INVOKER AS $function$
+DECLARE
+  final_version uuid;
+BEGIN
+  UPDATE applicationservice.mt_doc_application SET "data" = doc, "mt_dotnet_type" = docDotNetType, "mt_version" = docVersion, mt_last_modified = transaction_timestamp() where id = docId;
+
+  SELECT mt_version FROM applicationservice.mt_doc_application into final_version WHERE id = docId ;
+  RETURN final_version;
+END;
+$function$;
+
+ 
+[2023-03-07 17:12:47.611] [SWTs-MacBook-Pro] [DBG] [Marten.IDocumentStore]> Marten executed in 18 ms, SQL: select applicationservice.mt_insert_application(:p0, :p1, :p2, :p3);
+  p0: {"ApplicationId":"c6a20512-9624-463f-b25e-6780974fe661","Status":null,"Parties":[{"FirstName":"commodo qui","LastName":"consequat esse est labore","StreetAddressLine1":"tempor","StreetAddressLine2":"incididunt velit","City":"cillum veniam fugiat enim","StateCode":"reprehenderit","ZipCode":"consectetur magna et mollit","EmailAddress":"aute","MobilePhoneNumber":"magna et sed id cupidatat","DateOfBirth":"magna elit","HouseholdIncome":27128692,"IsControlPerson":true,"TaxId":{"Number":"ea exercitation reprehenderit Duis","IsSocialSecurityNumber":false}},{"FirstName":"dolor proident","LastName":"nisi reprehen","StreetAddressLine1":"dolore","StreetAddressLine2":"tempor ut ut Duis","City":"cupidatat ipsum fugiat","StateCode":"Excepteur ut minim commodo","ZipCode":"reprehenderit dolor eu","EmailAddress":"cillum ad","MobilePhoneNumber":"incididunt labore","DateOfBirth":"","HouseholdIncome":5967324,"IsControlPerson":false,"TaxId":{"Number":"magna ipsum","IsSocialSecurityNumber":false}}],"Business":{"Name":"dolor proident dolor non","DoingBusinessAs":"irure","StreetAddressLine1":"occaecat dolor","StreetAddressLine2":"qui mollit incididunt","City":"magna dolor fugiat laboris minim","StateCode":"elit irure est","ZipCode":"reprehenderit","PhoneNumber":"culpa ullam","EntityType":5,"AnnualSales":38615352,"OutstandingDebtAmount":38411491,"NaicsCode":72823479,"StartDate":"ut Excepteur","IsNonProfit":true,"BusinessTaxId":{"Number":"enim","IsEmployerIdentificationNumber":true}},"LoanRequest":{"Amount":63214923,"Term":95654577,"Purpose":8,"ProductType":1,"Pitch":"sit eu"}}
+  p1: Application.Service.Application.Entities.Application
+  p2: c6a20512-9624-463f-b25e-6780974fe661
+  p3: 0186be22-582f-4b54-ae23-10e17282bb73 
+[2023-03-07 17:12:47.641] [SWTs-MacBook-Pro] [DBG] [Marten.IDocumentStore]> Persisted 0 updates in 18 ms, 1 inserts, and 0 deletions 
+[2023-03-07 17:12:47.864] [SWTs-MacBook-Pro] [ERR] [Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware]> An unhandled exception has occurred while executing the request. 
+System.InvalidOperationException: Cannot return as T1 as result is T0
+   at OneOf.OneOf`2.get_AsT1()
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCoreAsObject(Utf8JsonWriter writer, Object value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonSerializer.WriteCore[TValue](Utf8JsonWriter writer, TValue& value, JsonTypeInfo jsonTypeInfo, WriteStack& state)
+   at System.Text.Json.JsonSerializer.WriteStreamAsync[TValue](Stream utf8Json, TValue value, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at System.Text.Json.JsonSerializer.WriteStreamAsync[TValue](Stream utf8Json, TValue value, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at System.Text.Json.JsonSerializer.WriteStreamAsync[TValue](Stream utf8Json, TValue value, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Application.Service.Endpoints.PostApplicationsEndpoint.HandleAsync(PostApplicationRequest request, CancellationToken cancellationToken) in /Users/tolbas/Projects/application-service/application-service/Endpoints/PostApplicationEndpoint.cs:line 32
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[2023-03-07 17:27:37.511] [SWTs-MacBook-Pro] [DBG] [BoltOn.Requestor.Requestor]> Resolving handler for request: Application.Service.Application.Handlers.CreateApplicationRequest 
+[2023-03-07 17:27:37.551] [SWTs-MacBook-Pro] [DBG] [BoltOn.Requestor.Requestor]> Resolved handler: Application.Service.Application.Handlers.CreateApplicationHandler 
+[2023-03-07 17:27:55.557] [SWTs-MacBook-Pro] [DBG] [Application.Service.Application.Handlers.CreateApplicationHandler]> Validate Application... 
+[2023-03-07 17:27:55.567] [SWTs-MacBook-Pro] [DBG] [Application.Service.Application.Handlers.CreateApplicationHandler]> Creating Application... 
+[2023-03-07 17:27:55.797] [SWTs-MacBook-Pro] [DBG] [Marten.IDocumentStore]> Marten executed in 35 ms, SQL: select applicationservice.mt_insert_application(:p0, :p1, :p2, :p3);
+  p0: {"ApplicationId":"28bf1c1b-83b7-400f-8586-1585e72bf7e7","Status":null,"Parties":[{"FirstName":"commodo qui","LastName":"consequat esse est labore","StreetAddressLine1":"tempor","StreetAddressLine2":"incididunt velit","City":"cillum veniam fugiat enim","StateCode":"reprehenderit","ZipCode":"consectetur magna et mollit","EmailAddress":"aute","MobilePhoneNumber":"magna et sed id cupidatat","DateOfBirth":"magna elit","HouseholdIncome":27128692,"IsControlPerson":true,"TaxId":{"Number":"ea exercitation reprehenderit Duis","IsSocialSecurityNumber":false}},{"FirstName":"dolor proident","LastName":"nisi reprehen","StreetAddressLine1":"dolore","StreetAddressLine2":"tempor ut ut Duis","City":"cupidatat ipsum fugiat","StateCode":"Excepteur ut minim commodo","ZipCode":"reprehenderit dolor eu","EmailAddress":"cillum ad","MobilePhoneNumber":"incididunt labore","DateOfBirth":"","HouseholdIncome":5967324,"IsControlPerson":false,"TaxId":{"Number":"magna ipsum","IsSocialSecurityNumber":false}}],"Business":{"Name":"dolor proident dolor non","DoingBusinessAs":"irure","StreetAddressLine1":"occaecat dolor","StreetAddressLine2":"qui mollit incididunt","City":"magna dolor fugiat laboris minim","StateCode":"elit irure est","ZipCode":"reprehenderit","PhoneNumber":"culpa ullam","EntityType":5,"AnnualSales":38615352,"OutstandingDebtAmount":38411491,"NaicsCode":72823479,"StartDate":"ut Excepteur","IsNonProfit":true,"BusinessTaxId":{"Number":"enim","IsEmployerIdentificationNumber":true}},"LoanRequest":{"Amount":63214923,"Term":95654577,"Purpose":8,"ProductType":1,"Pitch":"sit eu"}}
+  p1: Application.Service.Application.Entities.Application
+  p2: 28bf1c1b-83b7-400f-8586-1585e72bf7e7
+  p3: 0186be30-343c-42c6-8672-19ee9fd065fc 
+[2023-03-07 17:27:55.820] [SWTs-MacBook-Pro] [DBG] [Marten.IDocumentStore]> Persisted 0 updates in 35 ms, 1 inserts, and 0 deletions 
+[2023-03-07 17:27:55.965] [SWTs-MacBook-Pro] [ERR] [Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware]> An unhandled exception has occurred while executing the request. 
+System.InvalidOperationException: Cannot return as T1 as result is T0
+   at OneOf.OneOf`2.get_AsT1()
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCoreAsObject(Utf8JsonWriter writer, Object value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonSerializer.WriteCore[TValue](Utf8JsonWriter writer, TValue& value, JsonTypeInfo jsonTypeInfo, WriteStack& state)
+   at System.Text.Json.JsonSerializer.WriteStreamAsync[TValue](Stream utf8Json, TValue value, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at System.Text.Json.JsonSerializer.WriteStreamAsync[TValue](Stream utf8Json, TValue value, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at System.Text.Json.JsonSerializer.WriteStreamAsync[TValue](Stream utf8Json, TValue value, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Application.Service.Endpoints.PostApplicationsEndpoint.HandleAsync(PostApplicationRequest request, CancellationToken cancellationToken) in /Users/tolbas/Projects/application-service/application-service/Endpoints/PostApplicationEndpoint.cs:line 32
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[2023-03-07 17:28:52.944] [SWTs-MacBook-Pro] [INF] [FastEndpoints.StartupTimer]> Registered 4 endpoints in 250 milliseconds. 
+[2023-03-07 17:28:53.154] [SWTs-MacBook-Pro] [INF] [FastEndpoints.Swagger.ValidationSchemaProcessor]> No validators found in the system! 
+[2023-03-07 17:29:11.691] [SWTs-MacBook-Pro] [DBG] [BoltOn.Requestor.Requestor]> Resolving handler for request: Application.Service.Application.Handlers.CreateApplicationRequest 
+[2023-03-07 17:29:12.155] [SWTs-MacBook-Pro] [DBG] [BoltOn.Requestor.Requestor]> Resolved handler: Application.Service.Application.Handlers.CreateApplicationHandler 
+[2023-03-07 17:29:16.238] [SWTs-MacBook-Pro] [DBG] [Application.Service.Application.Handlers.CreateApplicationHandler]> Validate Application... 
+[2023-03-07 17:29:18.948] [SWTs-MacBook-Pro] [DBG] [Application.Service.Application.Handlers.CreateApplicationHandler]> Creating Application... 
+[2023-03-07 17:29:21.126] [SWTs-MacBook-Pro] [DBG] [Marten.IDocumentStore]> Marten executed in 15 ms, SQL: select applicationservice.mt_insert_application(:p0, :p1, :p2, :p3);
+  p0: {"ApplicationId":"5c45d676-7e0c-41c7-8d84-7d26289e0cd6","Status":null,"Parties":[{"FirstName":"commodo qui","LastName":"consequat esse est labore","StreetAddressLine1":"tempor","StreetAddressLine2":"incididunt velit","City":"cillum veniam fugiat enim","StateCode":"reprehenderit","ZipCode":"consectetur magna et mollit","EmailAddress":"aute","MobilePhoneNumber":"magna et sed id cupidatat","DateOfBirth":"magna elit","HouseholdIncome":27128692,"IsControlPerson":true,"TaxId":{"Number":"ea exercitation reprehenderit Duis","IsSocialSecurityNumber":false}},{"FirstName":"dolor proident","LastName":"nisi reprehen","StreetAddressLine1":"dolore","StreetAddressLine2":"tempor ut ut Duis","City":"cupidatat ipsum fugiat","StateCode":"Excepteur ut minim commodo","ZipCode":"reprehenderit dolor eu","EmailAddress":"cillum ad","MobilePhoneNumber":"incididunt labore","DateOfBirth":"","HouseholdIncome":5967324,"IsControlPerson":false,"TaxId":{"Number":"magna ipsum","IsSocialSecurityNumber":false}}],"Business":{"Name":"dolor proident dolor non","DoingBusinessAs":"irure","StreetAddressLine1":"occaecat dolor","StreetAddressLine2":"qui mollit incididunt","City":"magna dolor fugiat laboris minim","StateCode":"elit irure est","ZipCode":"reprehenderit","PhoneNumber":"culpa ullam","EntityType":5,"AnnualSales":38615352,"OutstandingDebtAmount":38411491,"NaicsCode":72823479,"StartDate":"ut Excepteur","IsNonProfit":true,"BusinessTaxId":{"Number":"enim","IsEmployerIdentificationNumber":true}},"LoanRequest":{"Amount":63214923,"Term":95654577,"Purpose":8,"ProductType":1,"Pitch":"sit eu"}}
+  p1: Application.Service.Application.Entities.Application
+  p2: 5c45d676-7e0c-41c7-8d84-7d26289e0cd6
+  p3: 0186be31-80cb-45a2-92d3-c64cf269c193 
+[2023-03-07 17:29:21.156] [SWTs-MacBook-Pro] [DBG] [Marten.IDocumentStore]> Persisted 0 updates in 15 ms, 1 inserts, and 0 deletions 
+[2023-03-07 17:29:59.464] [SWTs-MacBook-Pro] [ERR] [Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware]> An unhandled exception has occurred while executing the request. 
+System.InvalidOperationException: Cannot return as T1 as result is T0
+   at OneOf.OneOf`2.get_AsT1()
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCoreAsObject(Utf8JsonWriter writer, Object value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonSerializer.WriteCore[TValue](Utf8JsonWriter writer, TValue& value, JsonTypeInfo jsonTypeInfo, WriteStack& state)
+   at System.Text.Json.JsonSerializer.WriteStreamAsync[TValue](Stream utf8Json, TValue value, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at System.Text.Json.JsonSerializer.WriteStreamAsync[TValue](Stream utf8Json, TValue value, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at System.Text.Json.JsonSerializer.WriteStreamAsync[TValue](Stream utf8Json, TValue value, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Application.Service.Endpoints.PostApplicationsEndpoint.HandleAsync(PostApplicationRequest request, CancellationToken cancellationToken) in /Users/tolbas/Projects/application-service/application-service/Endpoints/PostApplicationEndpoint.cs:line 32
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[2023-03-07 17:34:43.147] [SWTs-MacBook-Pro] [INF] [FastEndpoints.StartupTimer]> Registered 4 endpoints in 615 milliseconds. 
+[2023-03-07 17:34:43.456] [SWTs-MacBook-Pro] [INF] [FastEndpoints.Swagger.ValidationSchemaProcessor]> No validators found in the system! 
+[2023-03-07 17:35:40.335] [SWTs-MacBook-Pro] [DBG] [BoltOn.Requestor.Requestor]> Resolving handler for request: Application.Service.Application.Handlers.CreateApplicationRequest 
+[2023-03-07 17:35:40.903] [SWTs-MacBook-Pro] [DBG] [BoltOn.Requestor.Requestor]> Resolved handler: Application.Service.Application.Handlers.CreateApplicationHandler 
+[2023-03-07 17:35:46.775] [SWTs-MacBook-Pro] [DBG] [Application.Service.Application.Handlers.CreateApplicationHandler]> Validate Application... 
+[2023-03-07 17:35:46.817] [SWTs-MacBook-Pro] [DBG] [Application.Service.Application.Handlers.CreateApplicationHandler]> Creating Application... 
+[2023-03-07 17:35:47.246] [SWTs-MacBook-Pro] [DBG] [Marten.IDocumentStore]> Marten executed in 21 ms, SQL: select applicationservice.mt_insert_application(:p0, :p1, :p2, :p3);
+  p0: {"ApplicationId":"ffbddc7e-fd88-41af-9c87-0e217bf59d01","Status":null,"Parties":[{"FirstName":"commodo qui","LastName":"consequat esse est labore","StreetAddressLine1":"tempor","StreetAddressLine2":"incididunt velit","City":"cillum veniam fugiat enim","StateCode":"reprehenderit","ZipCode":"consectetur magna et mollit","EmailAddress":"aute","MobilePhoneNumber":"magna et sed id cupidatat","DateOfBirth":"magna elit","HouseholdIncome":27128692,"IsControlPerson":true,"TaxId":{"Number":"ea exercitation reprehenderit Duis","IsSocialSecurityNumber":false}},{"FirstName":"dolor proident","LastName":"nisi reprehen","StreetAddressLine1":"dolore","StreetAddressLine2":"tempor ut ut Duis","City":"cupidatat ipsum fugiat","StateCode":"Excepteur ut minim commodo","ZipCode":"reprehenderit dolor eu","EmailAddress":"cillum ad","MobilePhoneNumber":"incididunt labore","DateOfBirth":"","HouseholdIncome":5967324,"IsControlPerson":false,"TaxId":{"Number":"magna ipsum","IsSocialSecurityNumber":false}}],"Business":{"Name":"dolor proident dolor non","DoingBusinessAs":"irure","StreetAddressLine1":"occaecat dolor","StreetAddressLine2":"qui mollit incididunt","City":"magna dolor fugiat laboris minim","StateCode":"elit irure est","ZipCode":"reprehenderit","PhoneNumber":"culpa ullam","EntityType":5,"AnnualSales":38615352,"OutstandingDebtAmount":38411491,"NaicsCode":72823479,"StartDate":"ut Excepteur","IsNonProfit":true,"BusinessTaxId":{"Number":"enim","IsEmployerIdentificationNumber":true}},"LoanRequest":{"Amount":63214923,"Term":95654577,"Purpose":8,"ProductType":1,"Pitch":"sit eu"}}
+  p1: Application.Service.Application.Entities.Application
+  p2: ffbddc7e-fd88-41af-9c87-0e217bf59d01
+  p3: 0186be37-655e-4950-8922-26ca18f15887 
+[2023-03-07 17:35:47.278] [SWTs-MacBook-Pro] [DBG] [Marten.IDocumentStore]> Persisted 0 updates in 21 ms, 1 inserts, and 0 deletions 
+[2023-03-07 17:36:01.681] [SWTs-MacBook-Pro] [ERR] [Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware]> An unhandled exception has occurred while executing the request. 
+System.InvalidOperationException: Cannot return as T1 as result is T0
+   at OneOf.OneOf`2.get_AsT1()
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCoreAsObject(Utf8JsonWriter writer, Object value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonSerializer.WriteCore[TValue](Utf8JsonWriter writer, TValue& value, JsonTypeInfo jsonTypeInfo, WriteStack& state)
+   at System.Text.Json.JsonSerializer.WriteStreamAsync[TValue](Stream utf8Json, TValue value, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at System.Text.Json.JsonSerializer.WriteStreamAsync[TValue](Stream utf8Json, TValue value, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at System.Text.Json.JsonSerializer.WriteStreamAsync[TValue](Stream utf8Json, TValue value, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Application.Service.Endpoints.PostApplicationsEndpoint.<>c__DisplayClass2_1.<<HandleAsync>b__2>d.MoveNext() in /Users/tolbas/Projects/application-service/application-service/Endpoints/PostApplicationEndpoint.cs:line 33
+--- End of stack trace from previous location ---
+   at Application.Service.Endpoints.PostApplicationsEndpoint.HandleAsync(PostApplicationRequest request, CancellationToken cancellationToken) in /Users/tolbas/Projects/application-service/application-service/Endpoints/PostApplicationEndpoint.cs:line 32
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[2023-03-07 18:00:11.861] [SWTs-MacBook-Pro] [INF] [FastEndpoints.StartupTimer]> Registered 4 endpoints in 215 milliseconds. 
+[2023-03-07 18:00:12.056] [SWTs-MacBook-Pro] [INF] [FastEndpoints.Swagger.ValidationSchemaProcessor]> No validators found in the system! 
+[2023-03-07 18:00:23.052] [SWTs-MacBook-Pro] [DBG] [BoltOn.Requestor.Requestor]> Resolving handler for request: Application.Service.Application.Handlers.CreateApplicationRequest 
+[2023-03-07 18:00:23.610] [SWTs-MacBook-Pro] [DBG] [BoltOn.Requestor.Requestor]> Resolved handler: Application.Service.Application.Handlers.CreateApplicationHandler 
+[2023-03-07 18:00:31.379] [SWTs-MacBook-Pro] [DBG] [Application.Service.Application.Handlers.CreateApplicationHandler]> Validate Application... 
+[2023-03-07 18:00:31.399] [SWTs-MacBook-Pro] [DBG] [Application.Service.Application.Handlers.CreateApplicationHandler]> Creating Application... 
+[2023-03-07 18:00:31.911] [SWTs-MacBook-Pro] [DBG] [Marten.IDocumentStore]> Marten executed in 67 ms, SQL: select applicationservice.mt_insert_application(:p0, :p1, :p2, :p3);
+  p0: {"ApplicationId":"f0eea1f1-8227-4fa6-8819-dbb83d5d9850","Status":null,"Parties":[{"FirstName":"commodo qui","LastName":"consequat esse est labore","StreetAddressLine1":"tempor","StreetAddressLine2":"incididunt velit","City":"cillum veniam fugiat enim","StateCode":"reprehenderit","ZipCode":"consectetur magna et mollit","EmailAddress":"aute","MobilePhoneNumber":"magna et sed id cupidatat","DateOfBirth":"magna elit","HouseholdIncome":27128692,"IsControlPerson":true,"TaxId":{"Number":"ea exercitation reprehenderit Duis","IsSocialSecurityNumber":false}},{"FirstName":"dolor proident","LastName":"nisi reprehen","StreetAddressLine1":"dolore","StreetAddressLine2":"tempor ut ut Duis","City":"cupidatat ipsum fugiat","StateCode":"Excepteur ut minim commodo","ZipCode":"reprehenderit dolor eu","EmailAddress":"cillum ad","MobilePhoneNumber":"incididunt labore","DateOfBirth":"","HouseholdIncome":5967324,"IsControlPerson":false,"TaxId":{"Number":"magna ipsum","IsSocialSecurityNumber":false}}],"Business":{"Name":"dolor proident dolor non","DoingBusinessAs":"irure","StreetAddressLine1":"occaecat dolor","StreetAddressLine2":"qui mollit incididunt","City":"magna dolor fugiat laboris minim","StateCode":"elit irure est","ZipCode":"reprehenderit","PhoneNumber":"culpa ullam","EntityType":5,"AnnualSales":38615352,"OutstandingDebtAmount":38411491,"NaicsCode":72823479,"StartDate":"ut Excepteur","IsNonProfit":true,"BusinessTaxId":{"Number":"enim","IsEmployerIdentificationNumber":true}},"LoanRequest":{"Amount":63214923,"Term":95654577,"Purpose":8,"ProductType":1,"Pitch":"sit eu"}}
+  p1: Application.Service.Application.Entities.Application
+  p2: f0eea1f1-8227-4fa6-8819-dbb83d5d9850
+  p3: 0186be4e-0c63-4386-9763-aafef46393a3 
+[2023-03-07 18:00:31.952] [SWTs-MacBook-Pro] [DBG] [Marten.IDocumentStore]> Persisted 0 updates in 67 ms, 1 inserts, and 0 deletions 
+[2023-03-07 18:00:37.233] [SWTs-MacBook-Pro] [ERR] [Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware]> An unhandled exception has occurred while executing the request. 
+System.InvalidOperationException: Cannot return as T1 as result is T0
+   at OneOf.OneOf`2.get_AsT1()
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCoreAsObject(Utf8JsonWriter writer, Object value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonSerializer.WriteCore[TValue](Utf8JsonWriter writer, TValue& value, JsonTypeInfo jsonTypeInfo, WriteStack& state)
+   at System.Text.Json.JsonSerializer.WriteStreamAsync[TValue](Stream utf8Json, TValue value, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at System.Text.Json.JsonSerializer.WriteStreamAsync[TValue](Stream utf8Json, TValue value, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at System.Text.Json.JsonSerializer.WriteStreamAsync[TValue](Stream utf8Json, TValue value, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Application.Service.Endpoints.PostApplicationsEndpoint.HandleAsync(PostApplicationRequest request, CancellationToken cancellationToken) in /Users/tolbas/Projects/application-service/application-service/Endpoints/PostApplicationEndpoint.cs:line 32
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[2023-03-07 18:01:14.614] [SWTs-MacBook-Pro] [INF] [FastEndpoints.StartupTimer]> Registered 4 endpoints in 223 milliseconds. 
+[2023-03-07 18:01:14.771] [SWTs-MacBook-Pro] [INF] [FastEndpoints.Swagger.ValidationSchemaProcessor]> No validators found in the system! 
+[2023-03-07 18:01:28.073] [SWTs-MacBook-Pro] [DBG] [BoltOn.Requestor.Requestor]> Resolving handler for request: Application.Service.Application.Handlers.CreateApplicationRequest 
+[2023-03-07 18:01:28.463] [SWTs-MacBook-Pro] [DBG] [BoltOn.Requestor.Requestor]> Resolved handler: Application.Service.Application.Handlers.CreateApplicationHandler 
+[2023-03-07 18:01:28.485] [SWTs-MacBook-Pro] [DBG] [Application.Service.Application.Handlers.CreateApplicationHandler]> Validate Application... 
+[2023-03-07 18:01:28.500] [SWTs-MacBook-Pro] [DBG] [Application.Service.Application.Handlers.CreateApplicationHandler]> Creating Application... 
+[2023-03-07 18:01:28.745] [SWTs-MacBook-Pro] [DBG] [Marten.IDocumentStore]> Marten executed in 13 ms, SQL: select applicationservice.mt_insert_application(:p0, :p1, :p2, :p3);
+  p0: {"ApplicationId":"33996a72-8285-47be-8de6-5695a5837c96","Status":null,"Parties":[{"FirstName":"commodo qui","LastName":"consequat esse est labore","StreetAddressLine1":"tempor","StreetAddressLine2":"incididunt velit","City":"cillum veniam fugiat enim","StateCode":"reprehenderit","ZipCode":"consectetur magna et mollit","EmailAddress":"aute","MobilePhoneNumber":"magna et sed id cupidatat","DateOfBirth":"magna elit","HouseholdIncome":27128692,"IsControlPerson":true,"TaxId":{"Number":"ea exercitation reprehenderit Duis","IsSocialSecurityNumber":false}},{"FirstName":"dolor proident","LastName":"nisi reprehen","StreetAddressLine1":"dolore","StreetAddressLine2":"tempor ut ut Duis","City":"cupidatat ipsum fugiat","StateCode":"Excepteur ut minim commodo","ZipCode":"reprehenderit dolor eu","EmailAddress":"cillum ad","MobilePhoneNumber":"incididunt labore","DateOfBirth":"","HouseholdIncome":5967324,"IsControlPerson":false,"TaxId":{"Number":"magna ipsum","IsSocialSecurityNumber":false}}],"Business":{"Name":"dolor proident dolor non","DoingBusinessAs":"irure","StreetAddressLine1":"occaecat dolor","StreetAddressLine2":"qui mollit incididunt","City":"magna dolor fugiat laboris minim","StateCode":"elit irure est","ZipCode":"reprehenderit","PhoneNumber":"culpa ullam","EntityType":5,"AnnualSales":38615352,"OutstandingDebtAmount":38411491,"NaicsCode":72823479,"StartDate":"ut Excepteur","IsNonProfit":true,"BusinessTaxId":{"Number":"enim","IsEmployerIdentificationNumber":true}},"LoanRequest":{"Amount":63214923,"Term":95654577,"Purpose":8,"ProductType":1,"Pitch":"sit eu"}}
+  p1: Application.Service.Application.Entities.Application
+  p2: 33996a72-8285-47be-8de6-5695a5837c96
+  p3: 0186be4e-eb62-47bc-8df7-6305e0dc5390 
+[2023-03-07 18:01:28.800] [SWTs-MacBook-Pro] [DBG] [Marten.IDocumentStore]> Persisted 0 updates in 13 ms, 1 inserts, and 0 deletions 
+[2023-03-07 18:02:44.668] [SWTs-MacBook-Pro] [DBG] [BoltOn.Requestor.Requestor]> Resolving handler for request: Application.Service.Application.Handlers.GetApplicationRequest 
+[2023-03-07 18:02:44.693] [SWTs-MacBook-Pro] [DBG] [BoltOn.Requestor.Requestor]> Resolved handler: Application.Service.Application.Handlers.GetApplicationHandler 
+[2023-03-07 18:02:44.698] [SWTs-MacBook-Pro] [DBG] [Application.Service.Application.Handlers.GetApplicationHandler]> Getting application... 
+[2023-03-07 18:02:44.845] [SWTs-MacBook-Pro] [DBG] [Marten.IDocumentStore]> Marten executed in 8 ms, SQL: select d.id, d.data from applicationservice.mt_doc_application as d where d.id = :p0
+  p0: 33996a72-8285-47be-8de6-5695a5837c96 
+[2023-03-07 18:03:03.379] [SWTs-MacBook-Pro] [DBG] [BoltOn.Requestor.Requestor]> Resolving handler for request: Application.Service.Application.Handlers.GetAllApplicationsRequest 
+[2023-03-07 18:03:03.388] [SWTs-MacBook-Pro] [DBG] [BoltOn.Requestor.Requestor]> Resolved handler: Application.Service.Application.Handlers.GetAllApplicationsHandler 
+[2023-03-07 18:03:03.415] [SWTs-MacBook-Pro] [DBG] [Application.Service.Application.Handlers.GetAllApplicationsHandler]> Getting all applications... 
+[2023-03-07 18:03:03.463] [SWTs-MacBook-Pro] [DBG] [Marten.IDocumentStore]> Marten executed in 20 ms, SQL: select d.id, d.data from applicationservice.mt_doc_application as d
+ 
+[2023-03-07 18:03:46.662] [SWTs-MacBook-Pro] [ERR] [Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware]> An unhandled exception has occurred while executing the request. 
+System.InvalidCastException: Unable to cast object of type 'System.Threading.Tasks.ValueTask`1[System.Object]' to type 'Application.Service.Application.Handlers.UpdateApplicationRequest'.
+   at lambda_method585(Closure, Object, Object)
+   at FastEndpoints.RequestBinder`1.BindJsonBody(HttpRequest httpRequest, JsonSerializerContext serializerCtx, CancellationToken cancellation)
+   at FastEndpoints.RequestBinder`1.BindAsync(BinderContext ctx, CancellationToken cancellation)
+   at FastEndpoints.Endpoint`2.BindRequestAsync(EndpointDefinition def, HttpContext ctx, List`1 failures, CancellationToken ct)
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[2023-03-07 18:04:07.496] [SWTs-MacBook-Pro] [ERR] [Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware]> An unhandled exception has occurred while executing the request. 
+System.InvalidCastException: Unable to cast object of type 'System.Threading.Tasks.ValueTask`1[System.Object]' to type 'Application.Service.Application.Handlers.UpdateApplicationRequest'.
+   at lambda_method585(Closure, Object, Object)
+   at FastEndpoints.RequestBinder`1.BindJsonBody(HttpRequest httpRequest, JsonSerializerContext serializerCtx, CancellationToken cancellation)
+   at FastEndpoints.RequestBinder`1.BindAsync(BinderContext ctx, CancellationToken cancellation)
+   at FastEndpoints.Endpoint`2.BindRequestAsync(EndpointDefinition def, HttpContext ctx, List`1 failures, CancellationToken ct)
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[2023-03-07 18:04:56.992] [SWTs-MacBook-Pro] [ERR] [Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware]> An unhandled exception has occurred while executing the request. 
+System.InvalidCastException: Unable to cast object of type 'System.Threading.Tasks.ValueTask`1[System.Object]' to type 'Application.Service.Application.Handlers.UpdateApplicationRequest'.
+   at lambda_method585(Closure, Object, Object)
+   at FastEndpoints.RequestBinder`1.BindJsonBody(HttpRequest httpRequest, JsonSerializerContext serializerCtx, CancellationToken cancellation)
+   at FastEndpoints.RequestBinder`1.BindAsync(BinderContext ctx, CancellationToken cancellation)
+   at FastEndpoints.Endpoint`2.BindRequestAsync(EndpointDefinition def, HttpContext ctx, List`1 failures, CancellationToken ct)
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[2023-03-07 18:33:18.890] [SWTs-MacBook-Pro] [INF] [FastEndpoints.StartupTimer]> Registered 4 endpoints in 225 milliseconds. 
+[2023-03-07 18:33:19.067] [SWTs-MacBook-Pro] [INF] [FastEndpoints.Swagger.ValidationSchemaProcessor]> No validators found in the system! 
+[2023-03-07 18:33:28.133] [SWTs-MacBook-Pro] [ERR] [Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware]> An unhandled exception has occurred while executing the request. 
+System.InvalidCastException: Unable to cast object of type 'System.Threading.Tasks.ValueTask`1[System.Object]' to type 'Application.Service.Application.Handlers.UpdateApplicationRequest'.
+   at lambda_method347(Closure, Object, Object)
+   at FastEndpoints.RequestBinder`1.BindJsonBody(HttpRequest httpRequest, JsonSerializerContext serializerCtx, CancellationToken cancellation)
+   at FastEndpoints.RequestBinder`1.BindAsync(BinderContext ctx, CancellationToken cancellation)
+   at FastEndpoints.Endpoint`2.BindRequestAsync(EndpointDefinition def, HttpContext ctx, List`1 failures, CancellationToken ct)
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[2023-03-07 18:34:24.091] [SWTs-MacBook-Pro] [ERR] [Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware]> An unhandled exception has occurred while executing the request. 
+System.InvalidCastException: Unable to cast object of type 'System.Threading.Tasks.ValueTask`1[System.Object]' to type 'Application.Service.Application.Handlers.UpdateApplicationRequest'.
+   at lambda_method347(Closure, Object, Object)
+   at FastEndpoints.RequestBinder`1.BindJsonBody(HttpRequest httpRequest, JsonSerializerContext serializerCtx, CancellationToken cancellation)
+   at FastEndpoints.RequestBinder`1.BindAsync(BinderContext ctx, CancellationToken cancellation)
+   at FastEndpoints.Endpoint`2.BindRequestAsync(EndpointDefinition def, HttpContext ctx, List`1 failures, CancellationToken ct)
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[2023-03-07 18:38:04.233] [SWTs-MacBook-Pro] [INF] [FastEndpoints.StartupTimer]> Registered 4 endpoints in 275 milliseconds. 
+[2023-03-07 18:38:04.413] [SWTs-MacBook-Pro] [INF] [FastEndpoints.Swagger.ValidationSchemaProcessor]> No validators found in the system! 
+[2023-03-07 18:38:31.552] [SWTs-MacBook-Pro] [ERR] [Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware]> An unhandled exception has occurred while executing the request. 
+System.InvalidCastException: Unable to cast object of type 'System.Threading.Tasks.ValueTask`1[System.Object]' to type 'Application.Service.Application.Handlers.UpdateApplicationRequest'.
+   at lambda_method347(Closure, Object, Object)
+   at FastEndpoints.RequestBinder`1.BindJsonBody(HttpRequest httpRequest, JsonSerializerContext serializerCtx, CancellationToken cancellation)
+   at FastEndpoints.RequestBinder`1.BindAsync(BinderContext ctx, CancellationToken cancellation)
+   at FastEndpoints.Endpoint`2.BindRequestAsync(EndpointDefinition def, HttpContext ctx, List`1 failures, CancellationToken ct)
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[2023-03-07 18:57:08.217] [SWTs-MacBook-Pro] [ERR] [Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware]> An unhandled exception has occurred while executing the request. 
+System.InvalidCastException: Unable to cast object of type 'System.Threading.Tasks.ValueTask`1[System.Object]' to type 'Application.Service.Application.Handlers.UpdateApplicationRequest'.
+   at lambda_method347(Closure, Object, Object)
+   at FastEndpoints.RequestBinder`1.BindJsonBody(HttpRequest httpRequest, JsonSerializerContext serializerCtx, CancellationToken cancellation)
+   at FastEndpoints.RequestBinder`1.BindAsync(BinderContext ctx, CancellationToken cancellation)
+   at FastEndpoints.Endpoint`2.BindRequestAsync(EndpointDefinition def, HttpContext ctx, List`1 failures, CancellationToken ct)
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[2023-03-07 19:03:59.365] [SWTs-MacBook-Pro] [ERR] [Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware]> An unhandled exception has occurred while executing the request. 
+System.InvalidCastException: Unable to cast object of type 'System.Threading.Tasks.ValueTask`1[System.Object]' to type 'Application.Service.Application.Handlers.UpdateApplicationRequest'.
+   at lambda_method347(Closure, Object, Object)
+   at FastEndpoints.RequestBinder`1.BindJsonBody(HttpRequest httpRequest, JsonSerializerContext serializerCtx, CancellationToken cancellation)
+   at FastEndpoints.RequestBinder`1.BindAsync(BinderContext ctx, CancellationToken cancellation)
+   at FastEndpoints.Endpoint`2.BindRequestAsync(EndpointDefinition def, HttpContext ctx, List`1 failures, CancellationToken ct)
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[2023-03-07 19:06:51.325] [SWTs-MBP] [INF] [FastEndpoints.StartupTimer]> Registered 4 endpoints in 235 milliseconds. 
+[2023-03-07 19:06:51.545] [SWTs-MBP] [INF] [FastEndpoints.Swagger.ValidationSchemaProcessor]> No validators found in the system! 
+[2023-03-07 19:07:41.540] [SWTs-MBP] [ERR] [Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware]> An unhandled exception has occurred while executing the request. 
+System.InvalidCastException: Unable to cast object of type 'System.Threading.Tasks.ValueTask`1[System.Object]' to type 'Application.Service.Application.Handlers.UpdateApplicationRequest'.
+   at lambda_method347(Closure, Object, Object)
+   at FastEndpoints.RequestBinder`1.BindJsonBody(HttpRequest httpRequest, JsonSerializerContext serializerCtx, CancellationToken cancellation)
+   at FastEndpoints.RequestBinder`1.BindAsync(BinderContext ctx, CancellationToken cancellation)
+   at FastEndpoints.Endpoint`2.BindRequestAsync(EndpointDefinition def, HttpContext ctx, List`1 failures, CancellationToken ct)
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[2023-03-07 19:09:07.276] [SWTs-MBP] [ERR] [Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware]> An unhandled exception has occurred while executing the request. 
+System.InvalidCastException: Unable to cast object of type 'System.Threading.Tasks.ValueTask`1[System.Object]' to type 'Application.Service.Application.Handlers.UpdateApplicationRequest'.
+   at lambda_method347(Closure, Object, Object)
+   at FastEndpoints.RequestBinder`1.BindJsonBody(HttpRequest httpRequest, JsonSerializerContext serializerCtx, CancellationToken cancellation)
+   at FastEndpoints.RequestBinder`1.BindAsync(BinderContext ctx, CancellationToken cancellation)
+   at FastEndpoints.Endpoint`2.BindRequestAsync(EndpointDefinition def, HttpContext ctx, List`1 failures, CancellationToken ct)
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[2023-03-07 19:14:22.894] [SWTs-MBP] [ERR] [Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware]> An unhandled exception has occurred while executing the request. 
+System.InvalidCastException: Unable to cast object of type 'System.Threading.Tasks.ValueTask`1[System.Object]' to type 'Application.Service.Application.Handlers.UpdateApplicationRequest'.
+   at lambda_method347(Closure, Object, Object)
+   at FastEndpoints.RequestBinder`1.BindJsonBody(HttpRequest httpRequest, JsonSerializerContext serializerCtx, CancellationToken cancellation)
+   at FastEndpoints.RequestBinder`1.BindAsync(BinderContext ctx, CancellationToken cancellation)
+   at FastEndpoints.Endpoint`2.BindRequestAsync(EndpointDefinition def, HttpContext ctx, List`1 failures, CancellationToken ct)
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[2023-03-07 19:14:30.834] [SWTs-MBP] [ERR] [Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware]> An unhandled exception has occurred while executing the request. 
+System.InvalidCastException: Unable to cast object of type 'System.Threading.Tasks.ValueTask`1[System.Object]' to type 'Application.Service.Application.Handlers.UpdateApplicationRequest'.
+   at lambda_method347(Closure, Object, Object)
+   at FastEndpoints.RequestBinder`1.BindJsonBody(HttpRequest httpRequest, JsonSerializerContext serializerCtx, CancellationToken cancellation)
+   at FastEndpoints.RequestBinder`1.BindAsync(BinderContext ctx, CancellationToken cancellation)
+   at FastEndpoints.Endpoint`2.BindRequestAsync(EndpointDefinition def, HttpContext ctx, List`1 failures, CancellationToken ct)
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[2023-03-07 19:14:43.469] [SWTs-MBP] [ERR] [Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware]> An unhandled exception has occurred while executing the request. 
+System.InvalidCastException: Unable to cast object of type 'System.Threading.Tasks.ValueTask`1[System.Object]' to type 'Application.Service.Application.Handlers.UpdateApplicationRequest'.
+   at lambda_method347(Closure, Object, Object)
+   at FastEndpoints.RequestBinder`1.BindJsonBody(HttpRequest httpRequest, JsonSerializerContext serializerCtx, CancellationToken cancellation)
+   at FastEndpoints.RequestBinder`1.BindAsync(BinderContext ctx, CancellationToken cancellation)
+   at FastEndpoints.Endpoint`2.BindRequestAsync(EndpointDefinition def, HttpContext ctx, List`1 failures, CancellationToken ct)
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[2023-03-07 19:14:51.383] [SWTs-MBP] [ERR] [Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware]> An unhandled exception has occurred while executing the request. 
+System.InvalidCastException: Unable to cast object of type 'System.Threading.Tasks.ValueTask`1[System.Object]' to type 'Application.Service.Application.Handlers.UpdateApplicationRequest'.
+   at lambda_method347(Closure, Object, Object)
+   at FastEndpoints.RequestBinder`1.BindJsonBody(HttpRequest httpRequest, JsonSerializerContext serializerCtx, CancellationToken cancellation)
+   at FastEndpoints.RequestBinder`1.BindAsync(BinderContext ctx, CancellationToken cancellation)
+   at FastEndpoints.Endpoint`2.BindRequestAsync(EndpointDefinition def, HttpContext ctx, List`1 failures, CancellationToken ct)
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[2023-03-07 19:15:25.777] [SWTs-MBP] [ERR] [Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware]> An unhandled exception has occurred while executing the request. 
+System.InvalidCastException: Unable to cast object of type 'System.Threading.Tasks.ValueTask`1[System.Object]' to type 'Application.Service.Application.Handlers.UpdateApplicationRequest'.
+   at lambda_method347(Closure, Object, Object)
+   at FastEndpoints.RequestBinder`1.BindJsonBody(HttpRequest httpRequest, JsonSerializerContext serializerCtx, CancellationToken cancellation)
+   at FastEndpoints.RequestBinder`1.BindAsync(BinderContext ctx, CancellationToken cancellation)
+   at FastEndpoints.Endpoint`2.BindRequestAsync(EndpointDefinition def, HttpContext ctx, List`1 failures, CancellationToken ct)
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[2023-03-07 19:16:10.552] [SWTs-MBP] [ERR] [Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware]> An unhandled exception has occurred while executing the request. 
+System.InvalidCastException: Unable to cast object of type 'System.Threading.Tasks.ValueTask`1[System.Object]' to type 'Application.Service.Application.Handlers.UpdateApplicationRequest'.
+   at lambda_method347(Closure, Object, Object)
+   at FastEndpoints.RequestBinder`1.BindJsonBody(HttpRequest httpRequest, JsonSerializerContext serializerCtx, CancellationToken cancellation)
+   at FastEndpoints.RequestBinder`1.BindAsync(BinderContext ctx, CancellationToken cancellation)
+   at FastEndpoints.Endpoint`2.BindRequestAsync(EndpointDefinition def, HttpContext ctx, List`1 failures, CancellationToken ct)
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[2023-03-07 19:16:35.856] [SWTs-MBP] [ERR] [Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware]> An unhandled exception has occurred while executing the request. 
+System.InvalidCastException: Unable to cast object of type 'System.Threading.Tasks.ValueTask`1[System.Object]' to type 'Application.Service.Application.Handlers.UpdateApplicationRequest'.
+   at lambda_method347(Closure, Object, Object)
+   at FastEndpoints.RequestBinder`1.BindJsonBody(HttpRequest httpRequest, JsonSerializerContext serializerCtx, CancellationToken cancellation)
+   at FastEndpoints.RequestBinder`1.BindAsync(BinderContext ctx, CancellationToken cancellation)
+   at FastEndpoints.Endpoint`2.BindRequestAsync(EndpointDefinition def, HttpContext ctx, List`1 failures, CancellationToken ct)
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[2023-03-07 19:16:43.164] [SWTs-MBP] [ERR] [Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware]> An unhandled exception has occurred while executing the request. 
+System.InvalidCastException: Unable to cast object of type 'System.Threading.Tasks.ValueTask`1[System.Object]' to type 'Application.Service.Application.Handlers.UpdateApplicationRequest'.
+   at lambda_method347(Closure, Object, Object)
+   at FastEndpoints.RequestBinder`1.BindJsonBody(HttpRequest httpRequest, JsonSerializerContext serializerCtx, CancellationToken cancellation)
+   at FastEndpoints.RequestBinder`1.BindAsync(BinderContext ctx, CancellationToken cancellation)
+   at FastEndpoints.Endpoint`2.BindRequestAsync(EndpointDefinition def, HttpContext ctx, List`1 failures, CancellationToken ct)
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[2023-03-07 19:16:49.084] [SWTs-MBP] [ERR] [Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware]> An unhandled exception has occurred while executing the request. 
+System.InvalidCastException: Unable to cast object of type 'System.Threading.Tasks.ValueTask`1[System.Object]' to type 'Application.Service.Application.Handlers.UpdateApplicationRequest'.
+   at lambda_method347(Closure, Object, Object)
+   at FastEndpoints.RequestBinder`1.BindJsonBody(HttpRequest httpRequest, JsonSerializerContext serializerCtx, CancellationToken cancellation)
+   at FastEndpoints.RequestBinder`1.BindAsync(BinderContext ctx, CancellationToken cancellation)
+   at FastEndpoints.Endpoint`2.BindRequestAsync(EndpointDefinition def, HttpContext ctx, List`1 failures, CancellationToken ct)
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[2023-03-07 19:17:24.131] [SWTs-MBP] [ERR] [Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware]> An unhandled exception has occurred while executing the request. 
+System.InvalidCastException: Unable to cast object of type 'System.Threading.Tasks.ValueTask`1[System.Object]' to type 'Application.Service.Application.Handlers.UpdateApplicationRequest'.
+   at lambda_method347(Closure, Object, Object)
+   at FastEndpoints.RequestBinder`1.BindJsonBody(HttpRequest httpRequest, JsonSerializerContext serializerCtx, CancellationToken cancellation)
+   at FastEndpoints.RequestBinder`1.BindAsync(BinderContext ctx, CancellationToken cancellation)
+   at FastEndpoints.Endpoint`2.BindRequestAsync(EndpointDefinition def, HttpContext ctx, List`1 failures, CancellationToken ct)
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[2023-03-07 19:19:59.663] [SWTs-MBP] [INF] [FastEndpoints.StartupTimer]> Registered 4 endpoints in 762 milliseconds. 
+[2023-03-07 19:20:00.389] [SWTs-MBP] [INF] [FastEndpoints.Swagger.ValidationSchemaProcessor]> No validators found in the system! 
+[2023-03-07 19:20:48.658] [SWTs-MBP] [ERR] [Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware]> An unhandled exception has occurred while executing the request. 
+System.InvalidCastException: Unable to cast object of type 'System.Threading.Tasks.ValueTask`1[System.Object]' to type 'Application.Service.Application.Handlers.UpdateApplicationRequest'.
+   at lambda_method347(Closure, Object, Object)
+   at FastEndpoints.RequestBinder`1.BindJsonBody(HttpRequest httpRequest, JsonSerializerContext serializerCtx, CancellationToken cancellation)
+   at FastEndpoints.RequestBinder`1.BindAsync(BinderContext ctx, CancellationToken cancellation)
+   at FastEndpoints.Endpoint`2.BindRequestAsync(EndpointDefinition def, HttpContext ctx, List`1 failures, CancellationToken ct)
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[2023-03-07 19:24:01.572] [SWTs-MBP] [INF] [FastEndpoints.StartupTimer]> Registered 4 endpoints in 236 milliseconds. 
+[2023-03-07 19:24:01.767] [SWTs-MBP] [INF] [FastEndpoints.Swagger.ValidationSchemaProcessor]> No validators found in the system! 
+[2023-03-07 19:24:25.249] [SWTs-MBP] [ERR] [Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware]> An unhandled exception has occurred while executing the request. 
+System.InvalidCastException: Unable to cast object of type 'System.Threading.Tasks.ValueTask`1[System.Object]' to type 'Application.Service.Application.Handlers.UpdateApplicationRequest'.
+   at lambda_method347(Closure, Object, Object)
+   at FastEndpoints.RequestBinder`1.BindJsonBody(HttpRequest httpRequest, JsonSerializerContext serializerCtx, CancellationToken cancellation)
+   at FastEndpoints.RequestBinder`1.BindAsync(BinderContext ctx, CancellationToken cancellation)
+   at FastEndpoints.Endpoint`2.BindRequestAsync(EndpointDefinition def, HttpContext ctx, List`1 failures, CancellationToken ct)
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[2023-03-07 19:34:06.195] [SWTs-MBP] [ERR] [Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware]> An unhandled exception has occurred while executing the request. 
+System.InvalidCastException: Unable to cast object of type 'System.Threading.Tasks.ValueTask`1[System.Object]' to type 'Application.Service.Application.Handlers.UpdateApplicationRequest'.
+   at lambda_method347(Closure, Object, Object)
+   at FastEndpoints.RequestBinder`1.BindJsonBody(HttpRequest httpRequest, JsonSerializerContext serializerCtx, CancellationToken cancellation)
+   at FastEndpoints.RequestBinder`1.BindAsync(BinderContext ctx, CancellationToken cancellation)
+   at FastEndpoints.Endpoint`2.BindRequestAsync(EndpointDefinition def, HttpContext ctx, List`1 failures, CancellationToken ct)
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[2023-03-07 19:35:27.610] [SWTs-MBP] [INF] [FastEndpoints.StartupTimer]> Registered 4 endpoints in 252 milliseconds. 
+[2023-03-07 19:35:27.788] [SWTs-MBP] [INF] [FastEndpoints.Swagger.ValidationSchemaProcessor]> No validators found in the system! 
+[2023-03-07 19:35:47.819] [SWTs-MBP] [ERR] [Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware]> An unhandled exception has occurred while executing the request. 
+System.InvalidCastException: Unable to cast object of type 'System.Threading.Tasks.ValueTask`1[System.Object]' to type 'Application.Service.Application.Handlers.UpdateApplicationRequest'.
+   at lambda_method347(Closure, Object, Object)
+   at FastEndpoints.RequestBinder`1.BindJsonBody(HttpRequest httpRequest, JsonSerializerContext serializerCtx, CancellationToken cancellation)
+   at FastEndpoints.RequestBinder`1.BindAsync(BinderContext ctx, CancellationToken cancellation)
+   at FastEndpoints.Endpoint`2.BindRequestAsync(EndpointDefinition def, HttpContext ctx, List`1 failures, CancellationToken ct)
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[2023-03-07 19:39:36.029] [SWTs-MBP] [INF] [FastEndpoints.StartupTimer]> Registered 4 endpoints in 315 milliseconds. 
+[2023-03-07 19:39:36.336] [SWTs-MBP] [INF] [FastEndpoints.Swagger.ValidationSchemaProcessor]> No validators found in the system! 
+[2023-03-07 19:40:37.703] [SWTs-MBP] [INF] [FastEndpoints.StartupTimer]> Registered 4 endpoints in 418 milliseconds. 
+[2023-03-07 19:40:38.050] [SWTs-MBP] [INF] [FastEndpoints.Swagger.ValidationSchemaProcessor]> No validators found in the system! 
+[2023-03-07 19:41:30.188] [SWTs-MBP] [ERR] [Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware]> An unhandled exception has occurred while executing the request. 
+System.InvalidCastException: Unable to cast object of type 'System.Threading.Tasks.ValueTask`1[System.Object]' to type 'Application.Service.Endpoints.PutApplicationRequest'.
+   at FastEndpoints.RequestBinder`1.BindJsonBody(HttpRequest httpRequest, JsonSerializerContext serializerCtx, CancellationToken cancellation)
+   at FastEndpoints.RequestBinder`1.BindAsync(BinderContext ctx, CancellationToken cancellation)
+   at FastEndpoints.Endpoint`2.BindRequestAsync(EndpointDefinition def, HttpContext ctx, List`1 failures, CancellationToken ct)
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)

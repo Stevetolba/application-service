@@ -207,13 +207,10 @@
 /Users/tolbas/Projects/application-service/application-service/bin/Debug/net7.0/application-service.dll
 /Users/tolbas/Projects/application-service/application-service/bin/Debug/net7.0/application-service.pdb
 /Users/tolbas/Projects/application-service/application-service/bin/Debug/net7.0/AutoMapper.dll
-/Users/tolbas/Projects/application-service/application-service/bin/Debug/net7.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 /Users/tolbas/Projects/application-service/application-service/bin/Debug/net7.0/Baseline.dll
 /Users/tolbas/Projects/application-service/application-service/bin/Debug/net7.0/BaselineTypeDiscovery.dll
 /Users/tolbas/Projects/application-service/application-service/bin/Debug/net7.0/BoltOn.dll
-/Users/tolbas/Projects/application-service/application-service/bin/Debug/net7.0/BoltOn.Bus.MassTransit.dll
 /Users/tolbas/Projects/application-service/application-service/bin/Debug/net7.0/BoltOn.Cache.dll
-/Users/tolbas/Projects/application-service/application-service/bin/Debug/net7.0/BoltOn.Data.EF.dll
 /Users/tolbas/Projects/application-service/application-service/bin/Debug/net7.0/BoltOn.Data.MartenDb.dll
 /Users/tolbas/Projects/application-service/application-service/bin/Debug/net7.0/CorrelationId.dll
 /Users/tolbas/Projects/application-service/application-service/bin/Debug/net7.0/FastEndpoints.dll
@@ -224,8 +221,6 @@
 /Users/tolbas/Projects/application-service/application-service/bin/Debug/net7.0/LamarCodeGeneration.dll
 /Users/tolbas/Projects/application-service/application-service/bin/Debug/net7.0/LamarCompiler.dll
 /Users/tolbas/Projects/application-service/application-service/bin/Debug/net7.0/Marten.dll
-/Users/tolbas/Projects/application-service/application-service/bin/Debug/net7.0/MassTransit.dll
-/Users/tolbas/Projects/application-service/application-service/bin/Debug/net7.0/MassTransit.Abstractions.dll
 /Users/tolbas/Projects/application-service/application-service/bin/Debug/net7.0/Microsoft.AspNetCore.OpenApi.dll
 /Users/tolbas/Projects/application-service/application-service/bin/Debug/net7.0/Microsoft.Bcl.AsyncInterfaces.dll
 /Users/tolbas/Projects/application-service/application-service/bin/Debug/net7.0/Microsoft.CodeAnalysis.dll
@@ -236,9 +231,6 @@
 /Users/tolbas/Projects/application-service/application-service/bin/Debug/net7.0/Microsoft.CodeAnalysis.VisualBasic.dll
 /Users/tolbas/Projects/application-service/application-service/bin/Debug/net7.0/Microsoft.CodeAnalysis.VisualBasic.Workspaces.dll
 /Users/tolbas/Projects/application-service/application-service/bin/Debug/net7.0/Microsoft.CodeAnalysis.Workspaces.dll
-/Users/tolbas/Projects/application-service/application-service/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.dll
-/Users/tolbas/Projects/application-service/application-service/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Abstractions.dll
-/Users/tolbas/Projects/application-service/application-service/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Relational.dll
 /Users/tolbas/Projects/application-service/application-service/bin/Debug/net7.0/Microsoft.Extensions.DependencyModel.dll
 /Users/tolbas/Projects/application-service/application-service/bin/Debug/net7.0/Microsoft.OpenApi.dll
 /Users/tolbas/Projects/application-service/application-service/bin/Debug/net7.0/Namotion.Reflection.dll
@@ -400,3 +392,5 @@
 /Users/tolbas/Projects/application-service/application-service/obj/Debug/net7.0/application-service.pdb
 /Users/tolbas/Projects/application-service/application-service/obj/Debug/net7.0/application-service.genruntimeconfig.cache
 /Users/tolbas/Projects/application-service/application-service/obj/Debug/net7.0/ref/application-service.dll
+/Users/tolbas/Projects/application-service/application-service/bin/Debug/net7.0/FluentValidation.DependencyInjectionExtensions.dll
+/Users/tolbas/Projects/application-service/application-service/bin/Debug/net7.0/OneOf.dll

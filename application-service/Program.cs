@@ -10,13 +10,14 @@ using Marten;
 using Microsoft.Extensions.Configuration;
 using Serilog;
 using System.Reflection;
-using Application.Service.Infrastructure.Data.Mappings;
 using Application.Service.Infrastructure.Data;
+using Microsoft.AspNetCore.Identity;
+using Application.Service.Application.Validation;
+using FluentValidation;
 
 var builder = WebApplication.CreateBuilder(args);
 var config = builder.Configuration;
 var applicationServicePostgressConnectionString = config.GetValue<string>("ApplicationServicePostgresConnectionString") ?? string.Empty;
-var storeOptions = new StoreOptions();
 
 // Add services to the container.
 builder.Services.AddFastEndpoints();
@@ -25,9 +26,9 @@ builder.Services.AddDefaultCorrelationId();
 
 builder.Services.BoltOn(options =>
 {
-    options.BoltOnAssemblies(typeof(GetAllStudentsRequest).Assembly);
+    options.BoltOnAssemblies(typeof(GetAllApplicationsRequest).Assembly);
 });
-    
+
 Log.Logger = new LoggerConfiguration()
                             .Enrich.WithMachineName()
                             .Enrich.FromLogContext()
@@ -52,15 +53,9 @@ builder.Services.AddMarten(opts =>
     opts.Schema.Include<MartenDbRegistery>();
 }).OptimizeArtifactWorkflow();
 
-builder.Services.AddTransient<BoltOn.Data.MartenDb.IRepository<Student>, BoltOn.Data.MartenDb.Repository<Student>>();
-builder.Services.AddTransient<BoltOn.Data.MartenDb.IRepository<StudentFlattened>, BoltOn.Data.MartenDb.Repository<StudentFlattened>>();
-
-builder.Services.AddTransient<BoltOn.Data.MartenDb.IQueryRepository<StudentType>, BoltOn.Data.MartenDb.QueryRepository<StudentType>>();
-builder.Services.AddTransient<BoltOn.Data.MartenDb.IQueryRepository<Course>, BoltOn.Data.MartenDb.QueryRepository<Course>>();
-
-
-builder.Services
-  .AddAutoMapper(typeof(GetAllStudentsRequest).Assembly);
+builder.Services.AddTransient<BoltOn.Data.MartenDb.IRepository<Application.Service.Application.Entities.Application>,
+    BoltOn.Data.MartenDb.Repository<Application.Service.Application.Entities.Application>>();
+builder.Services.AddValidatorsFromAssemblyContaining<CreateApplicationRequestValidator>(ServiceLifetime.Transient);
 
 var app = builder.Build();
 

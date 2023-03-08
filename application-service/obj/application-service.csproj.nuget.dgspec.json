@@ -41,29 +41,25 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
-            "AutoMapper": {
-              "target": "Package",
-              "version": "[12.0.1, )"
-            },
             "BoltOn": {
               "target": "Package",
               "version": "[1.10.2, )"
-            },
-            "BoltOn.Bus.MassTransit": {
-              "target": "Package",
-              "version": "[1.5.1, )"
-            },
-            "BoltOn.Data.EF": {
-              "target": "Package",
-              "version": "[1.5.1, )"
             },
             "BoltOn.Data.MartenDb": {
               "target": "Package",
               "version": "[0.5.1, )"
             },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.5.1, )"
+            },
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.2, )"
+            },
+            "OneOf": {
+              "target": "Package",
+              "version": "[3.0.223, )"
             }
           },
           "imports": [
@@ -131,29 +127,9 @@
               "target": "Package",
               "version": "[1.10.2, )"
             },
-            "BoltOn.Bus.MassTransit": {
-              "target": "Package",
-              "version": "[1.5.1, )"
-            },
-            "BoltOn.Data.EF": {
-              "target": "Package",
-              "version": "[1.5.1, )"
-            },
             "Marten": {
               "target": "Package",
               "version": "[5.11.0, )"
-            },
-            "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[7.0.2, )"
-            },
-            "Microsoft.EntityFrameworkCore.Relational": {
-              "target": "Package",
-              "version": "[7.0.2, )"
-            },
-            "Newtonsoft.Json": {
-              "target": "Package",
-              "version": "[13.0.2, )"
             }
           },
           "imports": [
@@ -220,14 +196,6 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
-            "AutoMapper": {
-              "target": "Package",
-              "version": "[12.0.1, )"
-            },
-            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
-              "target": "Package",
-              "version": "[12.0.0, )"
-            },
             "BoltOn": {
               "target": "Package",
               "version": "[1.10.2, )"
@@ -251,6 +219,10 @@
             "FastEndpoints.Swagger": {
               "target": "Package",
               "version": "[5.7.2, )"
+            },
+            "FluentValidation.DependencyInjectionExtensions": {
+              "target": "Package",
+              "version": "[11.5.1, )"
             },
             "Marten": {
               "target": "Package",

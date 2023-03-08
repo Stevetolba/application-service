@@ -22,11 +22,10 @@
     <PackageReference Include="Serilog.Settings.Configuration" Version="3.4.0" />
     <PackageReference Include="Serilog.Enrichers.Environment" Version="2.2.0" />
     <PackageReference Include="Serilog.Extensions.Logging" Version="3.1.0" />
-    <PackageReference Include="AutoMapper" Version="12.0.1" />
-    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
     <PackageReference Include="BoltOn" Version="1.10.2" />
     <PackageReference Include="BoltOn.Cache" Version="1.6.1" />
     <PackageReference Include="BoltOn.Data.MartenDb" Version="0.5.1" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.5.1" />
   </ItemGroup>
 
   <ItemGroup>
@@ -38,6 +37,7 @@
     <None Remove="Serilog.Extensions.Logging" />
     <None Remove="AutoMapper" />
     <None Remove="AutoMapper.Extensions.Microsoft.DependencyInjection" />
+    <None Remove="Internal\Generated\DocumentStorage\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\application-service.Infrastructure\application-service.Infrastructure.csproj">
@@ -46,5 +46,11 @@
     <ProjectReference Include="..\application-service.Application\application-service.Application.csproj">
       <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Endpoints\GetStudentsEndpoint %28copy%29.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Internal\Generated\DocumentStorage\" />
   </ItemGroup>
 </Project>
